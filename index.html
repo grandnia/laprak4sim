@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Laporan 4</title>
     <!-- Link CSS Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+     crossorigin="anonymous" />
     <!-- My CSS -->
     <link rel="stylesheet" href="style.css" />
     <!-- Bootstrap Bundle JS -->
@@ -16,12 +18,14 @@
     <!-- Start Navbar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container">
-        <!-- Logo on the top left corner -->
+      
         <a class="navbar-brand" href="#">
-          <img src="img\oyeah.png" alt="Logo" style="height: 40px;"> <!-- Gantilah path gambar logo dengan path yang sesuai -->
+          <img src="img\oyeah.png" alt="Logo" style="height: 40px;"> 
           Arunika Pustaka
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+         aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -33,7 +37,8 @@
               <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="layananMenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="#layanan" id="layananMenu" role="button" 
+              data-bs-toggle="dropdown" aria-expanded="false">
                 Layanan
               </a>
               <ul class="dropdown-menu" aria-labelledby="layananMenu">
@@ -50,10 +55,8 @@
       </div>
     </nav>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- End Navbar -->
   </body>
-  
+  <!-- End Navbar -->
 
     <!--Start Jumbotron-->
     <section class="jumbotron text-center">
@@ -89,85 +92,53 @@
           pengalaman membaca yang lebih praktis, inovatif, dan menyenangkan!
         </p>
       </div>
-    </div>
-    
-  </div>
-        <div class="col-4">
-          <p>.</p>
-        </div>
-      </div>
-    </div>
-   
+    </div> 
   </section>
   <!-- End About -->
 
- <!-- Start Contact -->
- <section id="pendaftaran" class="pendaftaran-section">
-  <div class="container">
-    <div class="row text-center mb-3">
-      <div class="col">
-        <h2>Pendaftaran Anggota</h2>
+
+ <!-- Start Layanan -->
+ <section id="layanan" class="container-fluid py-5" style="background: linear-gradient(to bottom, white, #a2d9ff);">
+  <h2 class="text-center mb-5">Layanan</h2>
+  <div id="pendaftaran" class="my-5">
+    <h3 class="text-center mb-4">Pendaftaran Anggota</h3>
+    <form name="pendaftaran" class="mx-auto p-4 bg-white shadow rounded" style="max-width: 600px;">
+      <div class="mb-3">
+        <label for="name" class="form-label">Nama Lengkap</label>
+        <input type="text" class="form-control" id="name" name="nama" placeholder="Masukkan nama lengkap" required />
       </div>
-    </div>
-  </div>
-    <div class="row justify-content-center">
-      <div class="col-md-6">
-        <form id="form-pendaftaran">
-          <div class="mb-3">
-            <label for="nama" class="form-label">Nama Lengkap</label>
-            <input type="text" class="form-control" id="nama" placeholder="Masukkan Nama Lengkap" required>
-          </div>
-          <div class="mb-3">
-            <label for="kelas" class="form-label">Kelas</label>
-            <input type="text" class="form-control" id="kelas" placeholder="Masukkan Kelas" required>
-          </div>
-          <div class="mb-3">
-            <label for="nis" class="form-label">Nomor Induk Siswa (NIS)</label>
-            <input type="number" class="form-control" id="nis" placeholder="Masukkan NIS" required>
-          </div>
-          <div class="mb-3">
-            <label for="alamat" class="form-label">Alamat</label>
-            <input type="text" class="form-control" id="alamat" placeholder="Masukkan Alamat" required>
-          </div>
-          <div class="mb-3">
-            <label for="telepon" class="form-label">Nomor Telepon</label>
-            <input type="text" class="form-control" id="telepon" placeholder="Masukkan Nomor Telepon" required>
-          </div>
-          <button type="submit" class="btn btn-primary w-100">Daftar</button>
-        </form>
+      <div class="mb-3">
+        <label for="kelas" class="form-label">Kelas</label>
+        <input type="text" class="form-control" id="kelas" name="kelas" placeholder="Masukkan kelas" required />
       </div>
-    </div>
+      <div class="mb-3">
+        <label for="nis" class="form-label">Nomor Induk Siswa (NIS)</label>
+        <input type="text" class="form-control" id="nis" name="nis" placeholder="Masukkan NIS" required />
+      </div>
+      <div class="mb-3">
+        <label for="alamat" class="form-label">Alamat</label>
+        <textarea class="form-control" id="alamat" rows="3" name="alamat" placeholder="Masukkan alamat" required></textarea>
+      </div>
+      <div class="mb-3">
+        <label for="nomor" class="form-label">Nomor Telepon</label>
+        <input type="text" class="form-control" id="nomor" name="nomor" placeholder="Masukkan nomor telepon" required />
+      </div>
+      <button type="submit" class="btn btn-primary w-100">Kirim</button>
+    </form>
   </div>
-  
+  <div id="informasi" class="my-5">
+    <h3 class="text-center mb-4">Informasi Layanan</h3>
+    <p class="text-center mx-auto" style="max-width: 800px; line-height: 1.6;">
+      Melalui layanan perpustakaan online ini, jelajahi samudra ilmu dalam keheningan digital,
+      nikmati kemudahan menjelajahi koleksi tanpa batas, dan temukan pelita pengetahuan yang akan menerangi perjalananmu.
+    </p>
+  </div>
 </section>
-<!-- End Contact -->
+<!-- End Layanan -->
 
 
-<!-- Start Informasi Layanan -->
-<section id="informasi" class="informasi-layanan-section">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-12 text-center">
-        <h2>Informasi Layanan</h2>
-      </div>
-    </div>
-    <div class="row justify-content-center">
-      <div class="col-lg-6 col-md-8 col-sm-10 text-center">
-        <p class="fs-5">
-          Melalui layanan perpustakaan online ini, jelajahi samudra
-           ilmu dalam keheningan digital, nikmati kemudahan menjelajahi
-            koleksi tanpa batas, dan temukan pelita pengetahuan yang akan menerangi perjalananmu
-        </p>
-      </div>
-    </div>
-  </div>
- 
-</section>
 
-  <!-- End Informasi Layanan -->
-
-
-  <!-- Start Projects -->
+  <!-- Start Koleksi -->
   <section id="koleksi">
     <div class="container">
         <div class="row text-center">
@@ -289,7 +260,7 @@
 </div>
 
 </section>
-<!-- End Projects -->
+<!-- End Koleksi -->
 <!-- Start Footer -->
 <footer class="bg-primary text-white text-center pb-5">
   <p>Alamat: Jalan Nia Nia Sedunia No.14</p>
@@ -297,7 +268,24 @@
   <p>Sosial Media: @arunika.pustaka</p>
 </footer>
 <!-- End Footer -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+    crossorigin="anonymous"></script>
+    <form name="pendaftaran">
+      <input name="nama" type="text" placeholder="Nama" required>
+      <button type="submit">Send</button>
+    </form>
+
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbzHr2cXb0C6EJPNdKOQd6mokXTK1RLVLJ3Gv3BxeW-rwGcl7pfuAcxWqpqyNMuUFoMgIg/exec'
+      const form = document.forms['pendaftaran']
+      form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
 </body>
 </html>
 
