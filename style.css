@@ -4,9 +4,36 @@
 }
 
 #koleksi {
-  background-color: #e2edff;
+  background: linear-gradient(to bottom, #e2edff, #a2d9ff);
+  padding: 80px; /* Tambahkan ruang di sekitar konten */
 }
 
-section {
-  padding-top: 5 rem;
+.pendaftaran-section {
+  background: linear-gradient(to bottom, white, #a2d9ff); /* Gradasi warna */
+  padding: 80px; /* Ruang dalam */
+  margin: 0; /* Hilangkan margin */
+}
+
+.about-section {
+  padding: 30px; /* Tambahkan padding untuk jarak */
+  margin: 0; /* Hilangkan margin default */
+  background: linear-gradient(to bottom, #a2d9ff, white);
+}
+.section-about {
+  background-color: white; /* Warna latar belakang */
+  padding: 20px 20px; /* Ruang dalam */
+  border-radius: 8px; /* Sudut membulat */
+  margin: 0;
+}
+.informasi-layanan-section {
+  background: linear-gradient(to bottom, #a2d9ff, #e2edff);
+}
+.footer {
+  background-color: #4caf50; /* Mengubah warna latar belakang menjadi hijau */
+  color: #000000; /* Mengubah warna teks menjadi hitam */
+  padding-bottom: 50px; /* Menambahkan ruang bawah */
+}
+
+.footer p {
+  margin: 0; /* Menghilangkan margin untuk memastikan jarak yang lebih rapat */
 }
